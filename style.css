@@ -16,7 +16,7 @@
     --accent-pink: #AD45A5;
     --accent-blue: #2B86C5;
 
-    --background: #171618;
+    --background: #0c0d0d;
     --stroke: #333135;
 }
 
@@ -80,12 +80,20 @@
     border: 3px solid var(--accent-blue);
 }
 
+.accent-gray {
+    border: 3px solid var(--stroke);
+}
+
 .btn.accent-blue:hover {
     background: var(--accent-blue);
 }
 
 .btn.accent-pink:hover {
     background: var(--accent-pink);
+}
+
+.btn.accent-gray:hover {
+    background: var(--stroke);
 }
 
 hr {
@@ -126,7 +134,7 @@ body {
 }
 
 /* Change width of container for better mobile experience */
-@media (max-width: 55rem) {
+@media (max-width: 720px) {
     .container {
         width: 90%;
     }
