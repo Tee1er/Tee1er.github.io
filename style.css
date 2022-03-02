@@ -1,0 +1,181 @@
+/* Import Inter font. */
+
+@import url('https://rsms.me/inter/inter.css');
+
+/* Create reusable properties */
+
+:root {
+
+    --main-font: "Inter", sans-serif;
+    --text-color: hsl(270, 4%, 90%);
+
+
+    --gradient-primary: linear-gradient(180deg, #FF3CAC 0%, #764BA0 49.48%, #2B86C5 100%);
+    --gradient-secondary: linear-gradient(180deg, #371634 0%, #271834 46.88%, #152338 100%);
+
+    --accent-pink: #AD45A5;
+    --accent-blue: #2B86C5;
+
+    --background: #171618;
+    --stroke: #333135;
+}
+
+
+@supports (font-variation-settings: normal) {
+    :root {
+        --main-font: "Inter var", sans-serif;
+    }
+}
+
+/* Global styles for inheritance */
+
+:root {
+    font-family: var(--main-font);
+    color: var(--text-color);
+
+    color-scheme: dark;
+}
+
+
+/* Style components */
+
+.btn {
+    display: inline-block;
+    padding: 0.5em;
+
+    font-weight: 700;
+
+    border-radius: 0.5em;
+
+    transition: 250ms;
+    cursor: pointer;
+
+    margin-bottom: 1em;
+
+    text-decoration: none;
+
+    color: inherit;
+}
+
+.btn + .btn {
+    margin-left: 0.5em;
+}
+
+.accent-box {
+    border-radius: 0.5em;
+}
+
+.accent-box > p {
+    margin: 0.75em auto;
+    display: block;
+    text-align: center;
+    font-weight: 600;
+}
+
+.accent-pink {
+    border: 3px solid var(--accent-pink);
+}
+
+.accent-blue {
+    border: 3px solid var(--accent-blue);
+}
+
+.btn.accent-blue:hover {
+    background: var(--accent-blue);
+}
+
+.btn.accent-pink:hover {
+    background: var(--accent-pink);
+}
+
+hr {
+    border: 0;
+    border-top: 3px solid var(--stroke);
+}
+
+/* Style text */
+
+.header > h1 {
+    font-size: 4em;
+    font-weight: 800;
+    background-image: var(--gradient-primary);
+    background-color: var(--accent-pink);
+
+    padding: 0.35em;
+
+    /* Unsupported browsers -> fallback */
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+/* Style background and containers */
+
+body {
+    background: var(--background);
+}
+
+.container {
+    width: 65%;
+    margin: auto;
+    transition: 1.5s;
+    max-width: 50rem;
+}
+
+/* Change width of container for better mobile experience */
+@media (max-width: 40rem) {
+    .container {
+        width: 90%;
+    }
+}
+
+.content {
+    padding: 1em;
+    border: 3px solid var(--stroke);
+    border-radius: 0.5em;
+
+    margin: 1em auto;
+}
+
+.header {
+    border-radius: 0.5em;
+
+    background: var(--gradient-secondary);
+
+    margin-bottom: -1.5em;
+}
+
+/* Create accordion style layout */
+
+.accordion-item {
+    border-radius: 0.5em;
+    border: 3px solid var(--stroke);
+    margin: 0.75em 0;
+    padding: 0.75em;
+}
+
+.accordion-content {
+    /* height: 0; */
+    display: none;
+    margin: 0.5em;
+    margin-top: 0.75em;
+    overflow: hidden;
+}
+
+.accordion-label {
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.accordion-active {
+    display: block;
+}
+
+
+
+
+
+
