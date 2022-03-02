@@ -126,7 +126,7 @@ body {
 }
 
 /* Change width of container for better mobile experience */
-@media (max-width: 40rem) {
+@media (max-width: 55rem) {
     .container {
         width: 90%;
     }
