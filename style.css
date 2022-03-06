@@ -156,6 +156,13 @@ body {
     margin-bottom: -1.5em;
 }
 
+.footer {
+    margin-top: 2.5em;
+    text-align: center;
+    color:hsl(270, 4%, 30%);
+    font-size: 0.8em;
+}
+
 /* Create accordion style layout */
 
 .accordion-item {
@@ -182,6 +189,15 @@ body {
 .accordion-active {
     display: block;
 }
+
+/* Style elements
+#experiment-button {
+    background: linear-gradient(45deg, #b22a78 0%, #3d2753 49.48%, #1a5178 100%);
+}
+
+#experiment-button:hover {
+    background: linear-gradient(45deg, #d83391 0%, #593879 49.48%, #226a9e 100%);
+} */
 
 
 

@@ -6,6 +6,16 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
     <script src="main.js" type="text/javascript" defer></script>
     <link rel="icon" type="image/x-icon" href="logo.ico">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BTKMND8QGT"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-BTKMND8QGT');
+    </script>
 </head>
 <html>
 <!--Container for centering elements-->
@@ -28,10 +38,10 @@
         </p>
         <a class="btn accent-blue" href="https://github.com/Tee1er">GitHub -></a>
         <a class="btn accent-pink" href="mailto:tyler@tylersong.me">Email -></a>
-        <div class="accent-box accent-pink">
+        <!-- <div class="accent-box accent-pink">
             <p>JavaScript — Go — Rust</p>
             <p>Node.js — Webdev — UI/UX</p>
-        </div>
+        </div> -->
     </div>
     <div class="content">
         <h2>Projects</h2>
@@ -43,6 +53,7 @@
         <div class="accordion">
             <!--Accordion style display of projects-->
             <div class="accordion-item">
+                <!--TODO: align the emoji things to the left using ::before probably-->
                 <span class="accordion-label">🟠 Boing
                 </span>
                 <div class="accordion-content">
@@ -100,6 +111,22 @@
         </div>
 
     </div>
-</div>
+    <!-- <div class="content">
+        <h2>Experiments</h2>
+        <p>
+            Some random things I've done with JavaScript:
+        </p>
+        <a id="experiment-button" class="btn">Experiments page -></a>
+
+    </div> -->
+
+    <!--Footer-->
+    <div class="footer">
+        <p>
+            A note on tracking: I use Google Analytics on this site,
+            partially so I can <s>stalk you and sell your data to advertisers</s> improve
+            the site, but mostly just for my own curiosity.
+        </p>
+    </div>
 
 </html>
